@@ -1,3 +1,5 @@
+#define NDEBUG
+
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
@@ -83,7 +85,7 @@ void Swap(void* elem1, void* elem2, size_t arrElemSize ){
     assert(elem1 != 0);
     assert(elem2 != 0);
 
-    void* temp = malloc(arrElemSize);
+    char *temp[arrElemSize];
     
     memcpy(temp, elem2, arrElemSize);
     memcpy(elem2, elem1, arrElemSize);
