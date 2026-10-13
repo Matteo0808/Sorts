@@ -90,6 +90,4 @@ void Swap(void* elem1, void* elem2, size_t arrElemSize ){
     memcpy(temp, elem2, arrElemSize);
     memcpy(elem2, elem1, arrElemSize);
     memcpy(elem1, temp, arrElemSize);
-
-    free(temp);
 }
